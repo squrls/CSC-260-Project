@@ -8,5 +8,6 @@ namespace Equipment
 {
     internal class Operator
     {
+
     }
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luke Morrell\\Documents\\DSU\\CSC_260_Object_Oriented\\Assignment5\\Shapes\\Equipment\\Equipment.csproj",
+      "projectUniqueName": "C:\\Users\\Luke Morrell\\Source\\Repos\\CSC-260-Project\\Equipment\\Equipment.csproj",
       "projectName": "Equipment",
-      "projectPath": "C:\\Users\\Luke Morrell\\Documents\\DSU\\CSC_260_Object_Oriented\\Assignment5\\Shapes\\Equipment\\Equipment.csproj",
+      "projectPath": "C:\\Users\\Luke Morrell\\Source\\Repos\\CSC-260-Project\\Equipment\\Equipment.csproj",
       "packagesPath": "C:\\Users\\Luke Morrell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luke Morrell\\Documents\\DSU\\CSC_260_Object_Oriented\\Assignment5\\Shapes\\Equipment\\obj\\",
+      "outputPath": "C:\\Users\\Luke Morrell\\Source\\Repos\\CSC-260-Project\\Equipment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

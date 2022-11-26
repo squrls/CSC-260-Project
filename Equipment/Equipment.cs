@@ -8,5 +8,7 @@ namespace Equipment
 {
     internal class Equipment
     {
+
+        public Equipment() { }
     }
 }

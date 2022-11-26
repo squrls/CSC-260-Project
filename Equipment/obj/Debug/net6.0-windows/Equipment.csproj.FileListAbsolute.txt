@@ -4,7 +4,6 @@ C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\bin\Debug\net6.0-wi
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\bin\Debug\net6.0-windows\Equipment.dll
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\bin\Debug\net6.0-windows\Equipment.pdb
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.csproj.AssemblyReference.cache
-C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.Form1.resources
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.csproj.GenerateResource.cache
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-wi
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.pdb
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.genruntimeconfig.cache
 C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\ref\Equipment.dll
+C:\Users\Luke Morrell\Source\Repos\CSC-260-Project\Equipment\obj\Debug\net6.0-windows\Equipment.UserInterface.resources

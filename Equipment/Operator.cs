@@ -8,6 +8,8 @@ namespace Equipment
 {
     internal class Operator
     {
+        public string Name;
+        List<Equipment> Equipments = new List<Equipment>();
 
     }
 }

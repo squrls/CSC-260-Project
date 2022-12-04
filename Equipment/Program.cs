@@ -11,7 +11,19 @@ namespace Equipment
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new UserInterface());
+
+            //Application.Run(new UserPage());
+            string selectedUser = "";
+            using (var form = new UserPage())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    selectedUser = form.selectedUser;
+                }
+            }
+
+            Application.Run(new UserInterface(selectedUser));
             
 
         }

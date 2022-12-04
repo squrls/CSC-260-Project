@@ -12,9 +12,10 @@ namespace Equipment
 {
     public partial class UserInterface : Form
     {
-        public UserInterface()
+        public UserInterface(string userClass)
         {
             InitializeComponent();
+            tempConsole.Text = userClass;
         }
 
         private void testbutton(object sender, EventArgs e)

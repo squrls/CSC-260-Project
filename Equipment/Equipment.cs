@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace Equipment
 {
-    internal class Equipment
+    public class Equipment
     {
+        public Equipment(string name) 
+        {
+            Name= name;
+        }
+        public string Name;
 
-        public Equipment() { }
+        public string DataOut()
+        {
+            return (Name + "\n");
+        }
     }
 }

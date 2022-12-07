@@ -1,6 +1,6 @@
 ﻿namespace Equipment
 {
-    partial class UserInterface
+    partial class UserPage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.tempConsole = new System.Windows.Forms.RichTextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Bob",
+            "Steve"});
+            this.comboBox1.Location = new System.Drawing.Point(352, 148);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(151, 28);
+            this.comboBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(368, 262);
+            this.button1.Location = new System.Drawing.Point(372, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Select";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.testbutton);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tempConsole
-            // 
-            this.tempConsole.Location = new System.Drawing.Point(129, 101);
-            this.tempConsole.Name = "tempConsole";
-            this.tempConsole.Size = new System.Drawing.Size(589, 120);
-            this.tempConsole.TabIndex = 1;
-            this.tempConsole.Text = "";
-            this.tempConsole.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(620, 328);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(150, 104);
-            this.listBox1.TabIndex = 2;
-            // 
-            // UserInterface
+            // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.tempConsole);
             this.Controls.Add(this.button1);
-            this.Name = "UserInterface";
-            this.Text = "EquipmentManager";
-            this.Load += new System.EventHandler(this.UserInterface_Load);
+            this.Controls.Add(this.comboBox1);
+            this.Name = "UserPage";
+            this.Text = "UserPage";
+            this.Load += new System.EventHandler(this.UserPage_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private ComboBox comboBox1;
         private Button button1;
-        private RichTextBox tempConsole;
-        private ListBox listBox1;
     }
 }

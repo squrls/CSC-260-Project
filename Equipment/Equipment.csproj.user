@@ -4,6 +4,9 @@
     <Compile Update="UserInterface.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="UserInterface.resx">

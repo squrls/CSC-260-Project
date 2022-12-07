@@ -8,24 +8,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Equipment
 {
     public partial class UserInterface : Form
     {
-        public UserInterface(string userClass)
+        public UserInterface(Operator oper)
         {
             InitializeComponent();
-            tempConsole.Text = userClass;
+            tempConsole.Text = oper.Name;
+            var CurrentUser = oper;
         }
 
         private void testbutton(object sender, EventArgs e)
         {
-            tempConsole.Text += "asdf";
+            buttonActivated();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
+            tempConsole.Text += "asdf";
+        }
 
+        private void UserInterface_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonActivated()
+        {
+            ////
+            /////
+            ///aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            /// 
+            /// 
+            /// 
+            /// 
+            /// wesdrfxgcvhkjpio uhhiulohiu
+            ////tempConsole.Text =oper.Name;
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.tempConsole = new System.Windows.Forms.RichTextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
@@ -42,7 +43,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.testbutton);
             // 
-            // richTextBox1
+            // tempConsole
             // 
             this.tempConsole.Location = new System.Drawing.Point(129, 101);
             this.tempConsole.Name = "tempConsole";
@@ -51,15 +52,26 @@
             this.tempConsole.Text = "";
             this.tempConsole.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(620, 328);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(150, 104);
+            this.listBox1.TabIndex = 2;
+            // 
             // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.tempConsole);
             this.Controls.Add(this.button1);
             this.Name = "UserInterface";
             this.Text = "EquipmentManager";
+            this.Load += new System.EventHandler(this.UserInterface_Load);
             this.ResumeLayout(false);
 
         }
@@ -68,5 +80,6 @@
 
         private Button button1;
         private RichTextBox tempConsole;
+        private ListBox listBox1;
     }
 }

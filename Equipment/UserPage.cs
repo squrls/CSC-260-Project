@@ -40,16 +40,6 @@ namespace Equipment
                 this.Close();
                 
             }
-            
-
-            //else if(comboBox1.SelectedText == "Bob") 
-            //{
-            //    MessageBox.Show("You picked a Bob");
-            //}
-            //else if (comboBox1.SelectedText == "Bob")
-            //{
-            //    MessageBox.Show("You picked a Minecraft");
-            //}
         }
     }
 }

@@ -8,6 +8,12 @@ namespace Equipment
         [STAThread]
         static void Main()
         {
+            var Harry = new Operator("Harry");
+            var lawnmower = new Equipment("Lawnmower");
+            var weedeater = new Equipment("weedeater");
+
+            Harry.CheckoutEquipment(lawnmower);
+            Harry.CheckoutEquipment(weedeater);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
@@ -23,7 +29,7 @@ namespace Equipment
                 }
             }
 
-            Application.Run(new UserInterface(selectedUser));
+            Application.Run(new UserInterface(Harry));
             
 
         }

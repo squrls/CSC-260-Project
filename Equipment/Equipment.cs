@@ -8,6 +8,7 @@ namespace Equipment
 {
     public class Equipment
     {
+        
         public Equipment(string name) 
         {
             Name= name;

@@ -9,6 +9,12 @@ namespace Equipment
         static void Main()
         {
             var Harry = new Operator("Harry");
+            var Bobo = new Operator("Bobo");
+            List<Operator> operators = new List<Operator>();
+            operators.Add(Harry);
+            operators.Add(Bobo);
+
+
             var lawnmower = new Equipment("Lawnmower");
             var weedeater = new Equipment("weedeater");
 
@@ -19,17 +25,18 @@ namespace Equipment
             ApplicationConfiguration.Initialize();
 
             //Application.Run(new UserPage());
-            string selectedUser = "";
-            using (var form = new UserPage())
+            string selectedUserName = "";
+            using (var form = new UserPage(operators))
             {
                 var result = form.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    selectedUser = form.selectedUser;
+                    selectedUserName = form.selectedUser;
                 }
             }
+            var SelectedUser = operators.Find(x => x.Name.Contains(selectedUserName));
 
-            Application.Run(new UserInterface(Harry));
+            Application.Run(new UserInterface(SelectedUser));
             
 
         }

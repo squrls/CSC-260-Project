@@ -12,9 +12,9 @@ namespace Equipment
 {
     public partial class UserPage : Form
     {
-        public UserPage()
+        public UserPage(List<Operator> operators)
         {
-            InitializeComponent();
+            InitializeComponent(operators);
         }
 
         public string selectedUser { get; set; }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+           
+
             this.button1 = new System.Windows.Forms.Button();
             this.tempConsole = new System.Windows.Forms.RichTextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -50,7 +52,7 @@
             this.tempConsole.Size = new System.Drawing.Size(589, 120);
             this.tempConsole.TabIndex = 1;
             this.tempConsole.Text = "";
-            this.tempConsole.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.tempConsole.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
             // 
             // listBox1
             // 

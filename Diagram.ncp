@@ -43,7 +43,7 @@
       <Entity type="Class">
         <Name>Vehicle</Name>
         <Access>Public</Access>
-        <Location left="687" top="340" />
+        <Location left="566" top="396" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Field">int Mileage</Member>
@@ -51,10 +51,28 @@
         <Member type="Method">public void Maintenance_alert()</Member>
         <Modifier>None</Modifier>
       </Entity>
+      <Entity type="Class">
+        <Name>PowerTools</Name>
+        <Access>Public</Access>
+        <Location left="782" top="571" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Tools</Name>
+        <Access>Public</Access>
+        <Location left="905" top="342" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
     </Entities>
     <Containers />
     <Relationships>
       <Relationship type="Dependency" first="0" second="2">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
       </Relationship>
@@ -67,6 +85,8 @@
         <EndOrientation>Horizontal</EndOrientation>
       </Relationship>
       <Relationship type="Association" first="3" second="1">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <Direction>Unidirectional</Direction>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a+d+OJpkSLRDnMIY8yw3vgmYpyilp/qlnopl4dfIR0KJ4Yggzk+to+Idm2U/RkZS2cUiRygrIIKeXw/APbw5aQ==",
+  "dgSpecHash": "tBrit3m7Tg0StoXtBLgZCWzkSzPYhz6A3PIaysQfMdcg1FRU9/X+SYf80P3LbC8fFbxviI2JsREmyFsQJ1ZuaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luke Morrell\\source\\repos\\CSC-260-Project\\Equipment\\Equipment.csproj",
+  "projectFilePath": "C:\\Users\\Luke Morrell\\source\\repos\\CSC-260-Project\\Equipment\\EquipmentManager.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

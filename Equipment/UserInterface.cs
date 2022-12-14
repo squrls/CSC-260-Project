@@ -14,20 +14,25 @@ namespace Equipment
 {
     public partial class UserInterface : Form
     {
-        
-        public UserInterface(Operator oper)
+        Operator CurrentUser;
+        List<Equipment> Equipments;
+
+        public UserInterface(Operator oper, List<Equipment> equipments)
         {
-            InitializeComponent();
-            //this.DataContext = new Operator("Hank");
             
+            CurrentUser = oper;
+            Equipments = equipments;
+
+            InitializeComponent();
+
             tempConsole.Text = oper.Name;
             tempConsole.Text += oper.ViewEquipment();
-            CurrentUser = oper;
+
         }
 
         private void testbutton(object sender, EventArgs e)
         {
-            tempConsole.Text += CurrentUser.Name;
+            tempConsole.Text += CurrentUser.ViewEquipment();
 
         }
 
@@ -40,8 +45,43 @@ namespace Equipment
         {
 
         }
-        Operator CurrentUser;
 
-        
+        private void Check_Click(object sender, EventArgs e)
+        {
+            if (ComboAvailableEquip.SelectedIndex != -1)
+            {
+                //tempConsole.Text += "Check";
+                string selectedEquipmentName = ComboAvailableEquip.Text;
+                var selectedEquipment = Equipments.Find(x => x.Name.Contains(selectedEquipmentName));
+                CurrentUser.CheckoutEquipment(selectedEquipment);
+                
+                ComboAvailableEquip.Items.Remove(selectedEquipment.Name);
+                ComboAvailableEquip.Refresh();
+                
+                ComboReturnEquip.Items.Add(selectedEquipment.Name);
+                ComboReturnEquip.Refresh();
+            }
+        }
+        private void Return_Click(object sender, EventArgs e)
+        {
+            if (ComboReturnEquip.SelectedIndex!= -1)
+            {
+                tempConsole.Text += "Return";
+                string selectedEquipmentName = ComboReturnEquip.Text;
+                var selectedEquipment = CurrentUser.EquipmentCheckedOut.Find(x => x.Name.Contains(selectedEquipmentName));
+                CurrentUser.ReturnEquipment(selectedEquipment);
+                
+                ComboReturnEquip.Items.Remove(selectedEquipment.Name);
+                ComboReturnEquip.Refresh();
+
+                ComboAvailableEquip.Items.Add(selectedEquipment.Name);
+                ComboAvailableEquip.Refresh();
+            }
+        }
+
+        private void ComboAvailableEquip_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

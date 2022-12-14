@@ -8,12 +8,15 @@ namespace Equipment
 {
     public class Equipment
     {
-        
-        public Equipment(string name) 
+        //Equipment() { }
+        public Equipment(string ename) 
         {
-            Name= name;
+            Name = ename;
+            IsEquipped = false;
+            
         }
         public string Name;
+        public bool IsEquipped;
 
         public string DataOut()
         {

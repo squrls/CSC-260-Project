@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(List<Operator> operators)
+        private void InitializeComponent(/*List<Operator> operators*/)
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,9 +37,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Admin"});
-
             //this.comboBox1.Items.Add(operators);
-            foreach (Operator individual in operators)
+            foreach (Operator individual in this.Operators)
             {
                 this.comboBox1.Items.Add(individual.Name);
             }
@@ -47,6 +46,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
